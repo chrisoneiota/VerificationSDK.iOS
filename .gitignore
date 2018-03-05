@@ -1,0 +1,31 @@
+
+# Xcode Dirt
+
+build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*~
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcuserdatad
+xcuserdata
+
+*~.nib
+*.swp
+
+
+# OSX Dirt
+.DS_Store
+
+Podfile.lock
+dev-unidays.realm.*
+support.realm.*
+*.orig
+Carthage/*
+Carthage/Build/*
+tools/concat-terms/node_modules
+tools/concat-terms/Terms
+DerivedData.noIndex/*
+Cartfile.resolved
