@@ -1,0 +1,6 @@
+framework module UnidaysVerificationSDK {
+  umbrella header "UnidaysVerificationSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

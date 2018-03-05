@@ -1,0 +1,16 @@
+PODS:
+  - UnidaysVerificationSDK (0.2.0)
+
+DEPENDENCIES:
+  - UnidaysVerificationSDK (from `../../`)
+
+EXTERNAL SOURCES:
+  UnidaysVerificationSDK:
+    :path: ../../
+
+SPEC CHECKSUMS:
+  UnidaysVerificationSDK: 75c2ebf706a1a5761e31d955dfad0456dddb060c
+
+PODFILE CHECKSUM: 9df3b65ac188d329af1006d1157b3524ca8e3c2c
+
+COCOAPODS: 1.4.0
