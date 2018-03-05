@@ -1,0 +1,6 @@
+framework module Pods_UnidaysSampleAppObjcTests {
+  umbrella header "Pods-UnidaysSampleAppObjcTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

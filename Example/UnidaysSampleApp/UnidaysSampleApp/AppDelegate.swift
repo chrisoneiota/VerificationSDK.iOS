@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UnidaysSDK
+import UnidaysVerificationSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

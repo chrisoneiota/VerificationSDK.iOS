@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UnidaysSDK
+import UnidaysVerificationSDK
 
 class ViewController: UIViewController {
     

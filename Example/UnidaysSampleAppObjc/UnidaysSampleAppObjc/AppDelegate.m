@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-@import UnidaysSDK;
+@import UnidaysVerificationSDK;
 
 @interface AppDelegate ()
 

@@ -11,7 +11,7 @@
 		4C4E8F241FCD79650083DCDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E8F231FCD79650083DCDB /* ViewController.swift */; };
 		4C4E8F271FCD79650083DCDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8F251FCD79650083DCDB /* Main.storyboard */; };
 		4C4E8F2C1FCD79650083DCDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E8F2A1FCD79650083DCDB /* LaunchScreen.storyboard */; };
-		4CA5EFF52015DA8D0083C8C7 /* UnidaysSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E8F351FCD7A810083DCDB /* UnidaysSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		886FF72CFC2E5DB70B81C3AA /* Pods_UnidaysSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A423ABD74AE295DF43851B4 /* Pods_UnidaysSampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,7 +21,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4CA5EFF52015DA8D0083C8C7 /* UnidaysSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +34,9 @@
 		4C4E8F261FCD79650083DCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C4E8F2B1FCD79650083DCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C4E8F2D1FCD79650083DCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C4E8F351FCD7A810083DCDB /* UnidaysSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnidaysSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		709DE4A3CAE153047E3A5667 /* Pods-UnidaysSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnidaysSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnidaysSampleApp/Pods-UnidaysSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		8A423ABD74AE295DF43851B4 /* Pods_UnidaysSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnidaysSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C300C6D7ACB7A9B651158369 /* Pods-UnidaysSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnidaysSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnidaysSampleApp/Pods-UnidaysSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886FF72CFC2E5DB70B81C3AA /* Pods_UnidaysSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +57,7 @@
 				4C4E8F201FCD79650083DCDB /* UnidaysSampleApp */,
 				4C4E8F1F1FCD79650083DCDB /* Products */,
 				4C4E8F331FCD7A810083DCDB /* Frameworks */,
+				62F360765EC8BA954A5075FA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +84,18 @@
 		4C4E8F331FCD7A810083DCDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C4E8F351FCD7A810083DCDB /* UnidaysSDK.framework */,
+				8A423ABD74AE295DF43851B4 /* Pods_UnidaysSampleApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62F360765EC8BA954A5075FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C300C6D7ACB7A9B651158369 /* Pods-UnidaysSampleApp.debug.xcconfig */,
+				709DE4A3CAE153047E3A5667 /* Pods-UnidaysSampleApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,10 +105,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C4E8F301FCD79650083DCDB /* Build configuration list for PBXNativeTarget "UnidaysSampleApp" */;
 			buildPhases = (
+				84DBF40D634F5B4BF80BAA78 /* [CP] Check Pods Manifest.lock */,
 				4C4E8F1A1FCD79650083DCDB /* Sources */,
 				4C4E8F1B1FCD79650083DCDB /* Frameworks */,
 				4C4E8F1C1FCD79650083DCDB /* Resources */,
 				4CA5EFF62015DA8E0083C8C7 /* Embed Frameworks */,
+				3080DEF4673113E7B8714B79 /* [CP] Embed Pods Frameworks */,
+				72DB68CD9105941E11F6A765 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +167,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3080DEF4673113E7B8714B79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UnidaysSampleApp/Pods-UnidaysSampleApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UnidaysVerificationSDK/UnidaysVerificationSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UnidaysVerificationSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnidaysSampleApp/Pods-UnidaysSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72DB68CD9105941E11F6A765 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnidaysSampleApp/Pods-UnidaysSampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84DBF40D634F5B4BF80BAA78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnidaysSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C4E8F1A1FCD79650083DCDB /* Sources */ = {
@@ -294,6 +363,7 @@
 		};
 		4C4E8F311FCD79650083DCDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C300C6D7ACB7A9B651158369 /* Pods-UnidaysSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -311,6 +381,7 @@
 		};
 		4C4E8F321FCD79650083DCDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709DE4A3CAE153047E3A5667 /* Pods-UnidaysSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

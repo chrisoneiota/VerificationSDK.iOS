@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-@import UnidaysSDK;
+@import UnidaysVerificationSDK;
 
 @interface ViewController ()
 
