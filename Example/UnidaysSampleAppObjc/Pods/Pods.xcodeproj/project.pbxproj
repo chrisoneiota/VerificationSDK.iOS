@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A11A641D2E40B5BB1E26FA9E870F3E9 /* UnidaysNativeAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECADD0AA5668CA83C6464BF97BF3E23A /* UnidaysNativeAppLauncher.swift */; };
+		0E5EA342DD89CE4BA90B6586434E93E2 /* UnidaysVerificationSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1390097A17DE2E06371402CD795F3B3C /* UnidaysVerificationSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0A5A8F251E2A5B70CE0F57B571683E /* SettingsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB18A12B53A0F044BC92078C1EE994C /* SettingsValidator.swift */; };
+		1EDE50B89BC5152B558D458F4F712931 /* UnidaysVerificationSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8291EA69C8265C0D8EEBEE49741BC11 /* UnidaysVerificationSDK-dummy.m */; };
+		22327CFAE655ABE9ED78EDF7E7E3BA77 /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F8E0D03655A03E0ACAC75DAB78EE8 /* ResponseValidator.swift */; };
+		255733A162B7015ABB44B72290B514AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		27F5ADFDEF7278D5625F51742B06A312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2962922D90A15B1E98B94EDC7A77419F /* UnidaysConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33C6A459EF6138E1256572102E7D42 /* UnidaysConfig.swift */; };
+		3942D933E243B806BDA9EAFE8427DF83 /* Pods-UnidaysSampleAppObjcTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60EF979DA935C8533BB85B4EC89414B5 /* Pods-UnidaysSampleAppObjcTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44B2DB6C692FC11A7D62C8666A647D37 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790E3F5A8F37425615CB3D260D63E4ED /* UrlBuilder.swift */; };
+		50AEA3554AF8A057F8FE49BC8A232864 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		61B679D2D7B7BE46E6710E932BC3722E /* Pods-UnidaysSampleAppObjc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 405A8D0ED91BE58EF24C99EA547E1357 /* Pods-UnidaysSampleAppObjc-dummy.m */; };
+		7112BDF6235F38E4EEC21EE668309FE0 /* Pods-UnidaysSampleAppObjc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C5432D913362FC12FB732694853452 /* Pods-UnidaysSampleAppObjc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C5EA5D25C3F921E161DAA89485BCCA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3CFDE4F65EFCAFA56B0BDE6EF47FF9 /* Request.swift */; };
+		9ABA01E89161DA72962F249BDACB8C3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2378521E11E3AA25C50BD3D1409FFEA /* Constants.swift */; };
+		9C386C6F6D4388B6EF43F089163B6B6C /* Pods-UnidaysSampleAppObjcTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D76EC01CDBC6DDE53F189890D1CC8642 /* Pods-UnidaysSampleAppObjcTests-dummy.m */; };
+		A2480501C4C1DF955DF4A83EDFF2212B /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 4B7797A10A064EF8324407B745400068 /* Info.plist */; };
+		A4CA9C5FE2C522E2AC09C32FD08722E7 /* UnidaysResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AFFEEF28A52DA82763D0D2FAFB35CE /* UnidaysResults.swift */; };
+		B75F78FB98B6506B30D3BF5FEBB78A4C /* ProductResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEE2B3ADA61F31A559C3DACE2DB7C /* ProductResponder.swift */; };
+		DAF59B31683B70E84F5D527B4801F3C2 /* ProductLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856A7466957F816C740F1DF35EAA37D8 /* ProductLauncher.swift */; };
+		EA1793833F1B5FCB2D4ADB9815B98C3B /* UnidaysSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F634E67BA089D23C129BE949E9E814 /* UnidaysSDK.swift */; };
+		FA550E0163DED903C00262E9DEAD4F94 /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B9ABCA64A98789B8FF6C585182EA5B /* ResponseParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		439F2138A07633D91C96E6617F18B8D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17EE3444986B53A05A85A7E84B250E78;
+			remoteInfo = UnidaysVerificationSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C11981AF9469EC674435830D146607 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042BEE2B3ADA61F31A559C3DACE2DB7C /* ProductResponder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductResponder.swift; sourceTree = "<group>"; };
+		05F0084DE2021DD6559C5224B2B290DD /* Pods-UnidaysSampleAppObjcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnidaysSampleAppObjcTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F99D39BB5F688AB6ECE46B518E3921C /* debug-edit-response.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "debug-edit-response.png"; path = "docs/debug-edit-response.png"; sourceTree = "<group>"; };
+		1071BBF392F4AEA58FD9A6E7BF8DF34E /* Pods-UnidaysSampleAppObjc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UnidaysSampleAppObjc.modulemap"; sourceTree = "<group>"; };
+		1390097A17DE2E06371402CD795F3B3C /* UnidaysVerificationSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnidaysVerificationSDK-umbrella.h"; sourceTree = "<group>"; };
+		1B88103B86B50364EEB2DBF436D990A9 /* Pods-UnidaysSampleAppObjcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnidaysSampleAppObjcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BB616C530B35F5D289D8741C77A36E4 /* usage-query-scheme.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "usage-query-scheme.png"; path = "docs/usage-query-scheme.png"; sourceTree = "<group>"; };
+		1D33C6A459EF6138E1256572102E7D42 /* UnidaysConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnidaysConfig.swift; sourceTree = "<group>"; };
+		22DD7B6F70E024BE4967E7D43933C8B2 /* Pods_UnidaysSampleAppObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UnidaysSampleAppObjc.framework; path = "Pods-UnidaysSampleAppObjc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3613C51953EEB699631EDCC0A93A38B1 /* Pods-UnidaysSampleAppObjc-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UnidaysSampleAppObjc-resources.sh"; sourceTree = "<group>"; };
+		370B6F13DF4D5F5B6FD1B64FC167318D /* debug-list.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "debug-list.png"; path = "docs/debug-list.png"; sourceTree = "<group>"; };
+		37A094A49E390184A530CD3E2D906C8C /* UnidaysVerificationSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = UnidaysVerificationSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3896FA8426BE01F6BCFEFDB8153E9991 /* Pods-UnidaysSampleAppObjcTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UnidaysSampleAppObjcTests.modulemap"; sourceTree = "<group>"; };
+		405A8D0ED91BE58EF24C99EA547E1357 /* Pods-UnidaysSampleAppObjc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UnidaysSampleAppObjc-dummy.m"; sourceTree = "<group>"; };
+		45C5432D913362FC12FB732694853452 /* Pods-UnidaysSampleAppObjc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UnidaysSampleAppObjc-umbrella.h"; sourceTree = "<group>"; };
+		49DF4A416498B96487592825AC8EEADE /* Pods-UnidaysSampleAppObjc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UnidaysSampleAppObjc-frameworks.sh"; sourceTree = "<group>"; };
+		4A247FA1B1976006222F088DCE866DED /* Pods-UnidaysSampleAppObjcTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UnidaysSampleAppObjcTests-frameworks.sh"; sourceTree = "<group>"; };
+		4B7797A10A064EF8324407B745400068 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = UnidaysSDK/Info.plist; sourceTree = "<group>"; };
+		4CB18A12B53A0F044BC92078C1EE994C /* SettingsValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsValidator.swift; sourceTree = "<group>"; };
+		53AFFEEF28A52DA82763D0D2FAFB35CE /* UnidaysResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnidaysResults.swift; sourceTree = "<group>"; };
+		53B9ABCA64A98789B8FF6C585182EA5B /* ResponseParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
+		552BA436EC01447F5EBF886D2D5D970E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5FA286D8D1F8767F7130A2FC0D464181 /* UnidaysVerificationSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UnidaysVerificationSDK.xcconfig; sourceTree = "<group>"; };
+		60EF979DA935C8533BB85B4EC89414B5 /* Pods-UnidaysSampleAppObjcTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UnidaysSampleAppObjcTests-umbrella.h"; sourceTree = "<group>"; };
+		658CCE389725EEA5C4917DCD1887C452 /* Pods-UnidaysSampleAppObjcTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UnidaysSampleAppObjcTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6617A391984142653C222B79DC8F9C70 /* Pods-UnidaysSampleAppObjcTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UnidaysSampleAppObjcTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		68151EAEE4EC6647860D379CC3D48038 /* UnidaysVerificationSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnidaysVerificationSDK-prefix.pch"; sourceTree = "<group>"; };
+		790E3F5A8F37425615CB3D260D63E4ED /* UrlBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
+		7F4687A612E140892FF3010D142BC117 /* Pods-UnidaysSampleAppObjcTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UnidaysSampleAppObjcTests-resources.sh"; sourceTree = "<group>"; };
+		856A7466957F816C740F1DF35EAA37D8 /* ProductLauncher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProductLauncher.swift; sourceTree = "<group>"; };
+		89F1868C9AD2E05CBDD63DA767C08EDF /* Pods-UnidaysSampleAppObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnidaysSampleAppObjc.debug.xcconfig"; sourceTree = "<group>"; };
+		8D2F045D2C573C0652930CB70C31010E /* usage-url-schemes.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "usage-url-schemes.png"; path = "docs/usage-url-schemes.png"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95B519E45CFBFEDCE6A56B6AD7521EFD /* Pods-UnidaysSampleAppObjc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UnidaysSampleAppObjc-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9EE83C2529E34DFF90EA13895822DDBB /* Pods-UnidaysSampleAppObjc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UnidaysSampleAppObjc-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2636DB7CDA96D9A37A2D095C6B08B26 /* Pods-UnidaysSampleAppObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UnidaysSampleAppObjc.release.xcconfig"; sourceTree = "<group>"; };
+		A4F634E67BA089D23C129BE949E9E814 /* UnidaysSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnidaysSDK.swift; sourceTree = "<group>"; };
+		AAFA7D8E49B769D8FE34371F1EE4E004 /* UnidaysVerificationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UnidaysVerificationSDK.framework; path = UnidaysVerificationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3CFDE4F65EFCAFA56B0BDE6EF47FF9 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C1DF8CED6C03787D1951FA666CE36C9B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D2EEADEDF90191BAD1B2B3C027028D54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76EC01CDBC6DDE53F189890D1CC8642 /* Pods-UnidaysSampleAppObjcTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UnidaysSampleAppObjcTests-dummy.m"; sourceTree = "<group>"; };
+		DA2C4EED5DEBB5FF8D5EA9C2011FD59D /* Pods_UnidaysSampleAppObjcTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UnidaysSampleAppObjcTests.framework; path = "Pods-UnidaysSampleAppObjcTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24F8E0D03655A03E0ACAC75DAB78EE8 /* ResponseValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResponseValidator.swift; sourceTree = "<group>"; };
+		E47B996353A18DC60D23035980EF0844 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECADD0AA5668CA83C6464BF97BF3E23A /* UnidaysNativeAppLauncher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnidaysNativeAppLauncher.swift; sourceTree = "<group>"; };
+		F2378521E11E3AA25C50BD3D1409FFEA /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8291EA69C8265C0D8EEBEE49741BC11 /* UnidaysVerificationSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UnidaysVerificationSDK-dummy.m"; sourceTree = "<group>"; };
+		FB49F2898C33BA6D384AA55BB871049C /* UnidaysVerificationSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UnidaysVerificationSDK.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64701F5D0836399E588F6CBC2F7581B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255733A162B7015ABB44B72290B514AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6D79BE96DBD49BC851A794BD6F848E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AEA3554AF8A057F8FE49BC8A232864 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5181CD0AC6C7540E5251C3A38DC09B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F5ADFDEF7278D5625F51742B06A312 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F33B6082CFC86163D38E847D4BBD792 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				790E3F5A8F37425615CB3D260D63E4ED /* UrlBuilder.swift */,
+			);
+			name = Request;
+			path = Request;
+			sourceTree = "<group>";
+		};
+		241664FEE6674E5D0284A87DA32ECFD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22DD7B6F70E024BE4967E7D43933C8B2 /* Pods_UnidaysSampleAppObjc.framework */,
+				DA2C4EED5DEBB5FF8D5EA9C2011FD59D /* Pods_UnidaysSampleAppObjcTests.framework */,
+				AAFA7D8E49B769D8FE34371F1EE4E004 /* UnidaysVerificationSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41FBD613C0454D3F3CB1E3A8EBD9D97A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDB0E729A749091D6F17B7D128036E76 /* UnidaysVerificationSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		47E4C802BF368222F5F39EBDC17EBB0F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F2378521E11E3AA25C50BD3D1409FFEA /* Constants.swift */,
+				4CB18A12B53A0F044BC92078C1EE994C /* SettingsValidator.swift */,
+				ECADD0AA5668CA83C6464BF97BF3E23A /* UnidaysNativeAppLauncher.swift */,
+				A4F634E67BA089D23C129BE949E9E814 /* UnidaysSDK.swift */,
+				D563D0A77C7314190CD42287DF757AD0 /* Models */,
+				6D75470CD046E68F97B9177D1F4DCD02 /* Product */,
+				0F33B6082CFC86163D38E847D4BBD792 /* Request */,
+				F895C4E4EC4E35E4EA724FEEA71E5023 /* Response */,
+			);
+			name = Classes;
+			path = UnidaysSDK/Classes;
+			sourceTree = "<group>";
+		};
+		6D75470CD046E68F97B9177D1F4DCD02 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				856A7466957F816C740F1DF35EAA37D8 /* ProductLauncher.swift */,
+				042BEE2B3ADA61F31A559C3DACE2DB7C /* ProductResponder.swift */,
+			);
+			name = Product;
+			path = Product;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				41FBD613C0454D3F3CB1E3A8EBD9D97A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				241664FEE6674E5D0284A87DA32ECFD8 /* Products */,
+				F7031595525CB89EB6F9DE6DFC092ECC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A0473314A337405C5AC040408636EF6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0F99D39BB5F688AB6ECE46B518E3921C /* debug-edit-response.png */,
+				370B6F13DF4D5F5B6FD1B64FC167318D /* debug-list.png */,
+				C1DF8CED6C03787D1951FA666CE36C9B /* LICENSE */,
+				552BA436EC01447F5EBF886D2D5D970E /* README.md */,
+				37A094A49E390184A530CD3E2D906C8C /* UnidaysVerificationSDK.podspec */,
+				1BB616C530B35F5D289D8741C77A36E4 /* usage-query-scheme.png */,
+				8D2F045D2C573C0652930CB70C31010E /* usage-url-schemes.png */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		95607BDFDCD017624CC3518F4E87CCDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00C11981AF9469EC674435830D146607 /* Info.plist */,
+				FB49F2898C33BA6D384AA55BB871049C /* UnidaysVerificationSDK.modulemap */,
+				5FA286D8D1F8767F7130A2FC0D464181 /* UnidaysVerificationSDK.xcconfig */,
+				F8291EA69C8265C0D8EEBEE49741BC11 /* UnidaysVerificationSDK-dummy.m */,
+				68151EAEE4EC6647860D379CC3D48038 /* UnidaysVerificationSDK-prefix.pch */,
+				1390097A17DE2E06371402CD795F3B3C /* UnidaysVerificationSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/UnidaysSampleAppObjc/Pods/Target Support Files/UnidaysVerificationSDK";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDB0E729A749091D6F17B7D128036E76 /* UnidaysVerificationSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4B7797A10A064EF8324407B745400068 /* Info.plist */,
+				47E4C802BF368222F5F39EBDC17EBB0F /* Classes */,
+				8A0473314A337405C5AC040408636EF6 /* Pod */,
+				95607BDFDCD017624CC3518F4E87CCDD /* Support Files */,
+			);
+			name = UnidaysVerificationSDK;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		BF32CF6937C60B45809E8A508DE50073 /* Pods-UnidaysSampleAppObjc */ = {
+			isa = PBXGroup;
+			children = (
+				D2EEADEDF90191BAD1B2B3C027028D54 /* Info.plist */,
+				1071BBF392F4AEA58FD9A6E7BF8DF34E /* Pods-UnidaysSampleAppObjc.modulemap */,
+				95B519E45CFBFEDCE6A56B6AD7521EFD /* Pods-UnidaysSampleAppObjc-acknowledgements.markdown */,
+				9EE83C2529E34DFF90EA13895822DDBB /* Pods-UnidaysSampleAppObjc-acknowledgements.plist */,
+				405A8D0ED91BE58EF24C99EA547E1357 /* Pods-UnidaysSampleAppObjc-dummy.m */,
+				49DF4A416498B96487592825AC8EEADE /* Pods-UnidaysSampleAppObjc-frameworks.sh */,
+				3613C51953EEB699631EDCC0A93A38B1 /* Pods-UnidaysSampleAppObjc-resources.sh */,
+				45C5432D913362FC12FB732694853452 /* Pods-UnidaysSampleAppObjc-umbrella.h */,
+				89F1868C9AD2E05CBDD63DA767C08EDF /* Pods-UnidaysSampleAppObjc.debug.xcconfig */,
+				A2636DB7CDA96D9A37A2D095C6B08B26 /* Pods-UnidaysSampleAppObjc.release.xcconfig */,
+			);
+			name = "Pods-UnidaysSampleAppObjc";
+			path = "Target Support Files/Pods-UnidaysSampleAppObjc";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D563D0A77C7314190CD42287DF757AD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA3CFDE4F65EFCAFA56B0BDE6EF47FF9 /* Request.swift */,
+				1D33C6A459EF6138E1256572102E7D42 /* UnidaysConfig.swift */,
+				53AFFEEF28A52DA82763D0D2FAFB35CE /* UnidaysResults.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7031595525CB89EB6F9DE6DFC092ECC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF32CF6937C60B45809E8A508DE50073 /* Pods-UnidaysSampleAppObjc */,
+				FEABCDDFA0CBEF0C71ECF765E636E0DD /* Pods-UnidaysSampleAppObjcTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F895C4E4EC4E35E4EA724FEEA71E5023 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				53B9ABCA64A98789B8FF6C585182EA5B /* ResponseParser.swift */,
+				E24F8E0D03655A03E0ACAC75DAB78EE8 /* ResponseValidator.swift */,
+			);
+			name = Response;
+			path = Response;
+			sourceTree = "<group>";
+		};
+		FEABCDDFA0CBEF0C71ECF765E636E0DD /* Pods-UnidaysSampleAppObjcTests */ = {
+			isa = PBXGroup;
+			children = (
+				E47B996353A18DC60D23035980EF0844 /* Info.plist */,
+				3896FA8426BE01F6BCFEFDB8153E9991 /* Pods-UnidaysSampleAppObjcTests.modulemap */,
+				658CCE389725EEA5C4917DCD1887C452 /* Pods-UnidaysSampleAppObjcTests-acknowledgements.markdown */,
+				6617A391984142653C222B79DC8F9C70 /* Pods-UnidaysSampleAppObjcTests-acknowledgements.plist */,
+				D76EC01CDBC6DDE53F189890D1CC8642 /* Pods-UnidaysSampleAppObjcTests-dummy.m */,
+				4A247FA1B1976006222F088DCE866DED /* Pods-UnidaysSampleAppObjcTests-frameworks.sh */,
+				7F4687A612E140892FF3010D142BC117 /* Pods-UnidaysSampleAppObjcTests-resources.sh */,
+				60EF979DA935C8533BB85B4EC89414B5 /* Pods-UnidaysSampleAppObjcTests-umbrella.h */,
+				1B88103B86B50364EEB2DBF436D990A9 /* Pods-UnidaysSampleAppObjcTests.debug.xcconfig */,
+				05F0084DE2021DD6559C5224B2B290DD /* Pods-UnidaysSampleAppObjcTests.release.xcconfig */,
+			);
+			name = "Pods-UnidaysSampleAppObjcTests";
+			path = "Target Support Files/Pods-UnidaysSampleAppObjcTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		510A7867984A496C77F787A7F985F874 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E5EA342DD89CE4BA90B6586434E93E2 /* UnidaysVerificationSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72CFC8A324AF710AE9AF4A6E0481F196 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7112BDF6235F38E4EEC21EE668309FE0 /* Pods-UnidaysSampleAppObjc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBDD7849A2754D3CFE7C34C4C24E1E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3942D933E243B806BDA9EAFE8427DF83 /* Pods-UnidaysSampleAppObjcTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17EE3444986B53A05A85A7E84B250E78 /* UnidaysVerificationSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCDBB9D5DA69988ECF66C3BD4928901B /* Build configuration list for PBXNativeTarget "UnidaysVerificationSDK" */;
+			buildPhases = (
+				EA6AE45A1C061118BE92FBE9D9A9E392 /* Sources */,
+				8B6D79BE96DBD49BC851A794BD6F848E /* Frameworks */,
+				510A7867984A496C77F787A7F985F874 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnidaysVerificationSDK;
+			productName = UnidaysVerificationSDK;
+			productReference = AAFA7D8E49B769D8FE34371F1EE4E004 /* UnidaysVerificationSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		64CA6EAED962CC989A0CA2E9E4AD9624 /* Pods-UnidaysSampleAppObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD994B38619182130DAFD127E6ED7137 /* Build configuration list for PBXNativeTarget "Pods-UnidaysSampleAppObjc" */;
+			buildPhases = (
+				7E20318A374D323933C8B77BA2831CE8 /* Sources */,
+				D5181CD0AC6C7540E5251C3A38DC09B2 /* Frameworks */,
+				72CFC8A324AF710AE9AF4A6E0481F196 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48F59DDF4EC3B42820200181033609E5 /* PBXTargetDependency */,
+			);
+			name = "Pods-UnidaysSampleAppObjc";
+			productName = "Pods-UnidaysSampleAppObjc";
+			productReference = 22DD7B6F70E024BE4967E7D43933C8B2 /* Pods_UnidaysSampleAppObjc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9034EF1A1F248025F343E2BB04262B75 /* Pods-UnidaysSampleAppObjcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D8FAA1A04362FD6113E07D6F0D28C6 /* Build configuration list for PBXNativeTarget "Pods-UnidaysSampleAppObjcTests" */;
+			buildPhases = (
+				266263200C8D1DFC68ECFE353D13F369 /* Sources */,
+				64701F5D0836399E588F6CBC2F7581B2 /* Frameworks */,
+				DDBDD7849A2754D3CFE7C34C4C24E1E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-UnidaysSampleAppObjcTests";
+			productName = "Pods-UnidaysSampleAppObjcTests";
+			productReference = DA2C4EED5DEBB5FF8D5EA9C2011FD59D /* Pods_UnidaysSampleAppObjcTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 241664FEE6674E5D0284A87DA32ECFD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64CA6EAED962CC989A0CA2E9E4AD9624 /* Pods-UnidaysSampleAppObjc */,
+				9034EF1A1F248025F343E2BB04262B75 /* Pods-UnidaysSampleAppObjcTests */,
+				17EE3444986B53A05A85A7E84B250E78 /* UnidaysVerificationSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		266263200C8D1DFC68ECFE353D13F369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C386C6F6D4388B6EF43F089163B6B6C /* Pods-UnidaysSampleAppObjcTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E20318A374D323933C8B77BA2831CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B679D2D7B7BE46E6710E932BC3722E /* Pods-UnidaysSampleAppObjc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6AE45A1C061118BE92FBE9D9A9E392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABA01E89161DA72962F249BDACB8C3C /* Constants.swift in Sources */,
+				A2480501C4C1DF955DF4A83EDFF2212B /* Info.plist in Sources */,
+				DAF59B31683B70E84F5D527B4801F3C2 /* ProductLauncher.swift in Sources */,
+				B75F78FB98B6506B30D3BF5FEBB78A4C /* ProductResponder.swift in Sources */,
+				86C5EA5D25C3F921E161DAA89485BCCA /* Request.swift in Sources */,
+				FA550E0163DED903C00262E9DEAD4F94 /* ResponseParser.swift in Sources */,
+				22327CFAE655ABE9ED78EDF7E7E3BA77 /* ResponseValidator.swift in Sources */,
+				1A0A5A8F251E2A5B70CE0F57B571683E /* SettingsValidator.swift in Sources */,
+				2962922D90A15B1E98B94EDC7A77419F /* UnidaysConfig.swift in Sources */,
+				0A11A641D2E40B5BB1E26FA9E870F3E9 /* UnidaysNativeAppLauncher.swift in Sources */,
+				A4CA9C5FE2C522E2AC09C32FD08722E7 /* UnidaysResults.swift in Sources */,
+				EA1793833F1B5FCB2D4ADB9815B98C3B /* UnidaysSDK.swift in Sources */,
+				1EDE50B89BC5152B558D458F4F712931 /* UnidaysVerificationSDK-dummy.m in Sources */,
+				44B2DB6C692FC11A7D62C8666A647D37 /* UrlBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48F59DDF4EC3B42820200181033609E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UnidaysVerificationSDK;
+			target = 17EE3444986B53A05A85A7E84B250E78 /* UnidaysVerificationSDK */;
+			targetProxy = 439F2138A07633D91C96E6617F18B8D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1D427038CB3B7AC0198FC15E9B371352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F0084DE2021DD6559C5224B2B290DD /* Pods-UnidaysSampleAppObjcTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UnidaysSampleAppObjcTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UnidaysSampleAppObjcTests/Pods-UnidaysSampleAppObjcTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UnidaysSampleAppObjcTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51F731C73D4F0B80DCC64B4E32A1C189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA286D8D1F8767F7130A2FC0D464181 /* UnidaysVerificationSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UnidaysVerificationSDK/UnidaysVerificationSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UnidaysVerificationSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UnidaysVerificationSDK/UnidaysVerificationSDK.modulemap";
+				PRODUCT_NAME = UnidaysVerificationSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5754DA92467E693354684135E9C15467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FA286D8D1F8767F7130A2FC0D464181 /* UnidaysVerificationSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UnidaysVerificationSDK/UnidaysVerificationSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UnidaysVerificationSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UnidaysVerificationSDK/UnidaysVerificationSDK.modulemap";
+				PRODUCT_NAME = UnidaysVerificationSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6FBE54A0AF4146D9AE073722CEB2A6AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F1868C9AD2E05CBDD63DA767C08EDF /* Pods-UnidaysSampleAppObjc.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UnidaysSampleAppObjc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UnidaysSampleAppObjc/Pods-UnidaysSampleAppObjc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UnidaysSampleAppObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82520463C3FB285B73C1AB0C9F8F5A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2636DB7CDA96D9A37A2D095C6B08B26 /* Pods-UnidaysSampleAppObjc.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UnidaysSampleAppObjc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UnidaysSampleAppObjc/Pods-UnidaysSampleAppObjc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UnidaysSampleAppObjc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9B575F57328B5B4167FA79F5670F4C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B88103B86B50364EEB2DBF436D990A9 /* Pods-UnidaysSampleAppObjcTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UnidaysSampleAppObjcTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UnidaysSampleAppObjcTests/Pods-UnidaysSampleAppObjcTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_UnidaysSampleAppObjcTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D8FAA1A04362FD6113E07D6F0D28C6 /* Build configuration list for PBXNativeTarget "Pods-UnidaysSampleAppObjcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B575F57328B5B4167FA79F5670F4C5 /* Debug */,
+				1D427038CB3B7AC0198FC15E9B371352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD994B38619182130DAFD127E6ED7137 /* Build configuration list for PBXNativeTarget "Pods-UnidaysSampleAppObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBE54A0AF4146D9AE073722CEB2A6AA /* Debug */,
+				82520463C3FB285B73C1AB0C9F8F5A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCDBB9D5DA69988ECF66C3BD4928901B /* Build configuration list for PBXNativeTarget "UnidaysVerificationSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F731C73D4F0B80DCC64B4E32A1C189 /* Debug */,
+				5754DA92467E693354684135E9C15467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
