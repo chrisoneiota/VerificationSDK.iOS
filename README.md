@@ -10,7 +10,7 @@ Cocoapods can be used to install the UNiDAYS Verification SDK
 
 1. If you dont have Cocoapods installed install it using the following guide [https://guides.cocoapods.org/using/getting-started.html#installation].
 1. Navigate into your projects root directory and run the command `pod init`. This will generate the Podfile that will be used to manage project dependancies including the UnidaysVerificationSDK framework.
-1. Add the following `pod 'UnidaysVerificationSDK', '0.2.0'` below the line containing `use_frameworks!`.
+1. Add the following `pod 'UnidaysVerificationSDK', '0.2.1'` below the line containing `use_frameworks!`.
 1. Run the command `pod install` this will install the required dependacies into the project.
 1. You can now open the project using the .xcworkspace file.
 1. Include the SDK by importing `UnidaysVerificationSDK` to the appropriate files (e.g in swift by adding `import UnidaysVerificationSDK` to the top of the AppDelegate class.

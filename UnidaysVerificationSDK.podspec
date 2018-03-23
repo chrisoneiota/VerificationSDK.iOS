@@ -6,7 +6,7 @@ s.name = "UnidaysVerificationSDK"
 s.summary = "The VerificationSDK allows you to retrieve a code directly from UNiDAYS."
 s.requires_arc = true
 
-s.version = "0.2.0"
+s.version = "0.2.1"
 
 s.license = { :type => "MIT", :file => "LICENSE" }
 
