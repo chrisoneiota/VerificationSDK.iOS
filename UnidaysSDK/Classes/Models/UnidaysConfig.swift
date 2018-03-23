@@ -18,10 +18,10 @@ import Foundation
     var customerSubdomain: String
     
     /// The behaviour this integration should use. Defaults to `.nativeAppOnly`. You can modify this to meet your own requirements.
-    var behaviourMode = BehaviourMode.defaultValue
+    public var behaviourMode = BehaviourMode.defaultValue
     
     /// If debug mode is enabled and the behaviour is set to native app. You will see a debug screen which enables you to test a variety of intergrations at development time.
-    var isDebugEnabled = false
+    public var isDebugEnabled = false
     
     @objc public init(scheme: String, customerSubdomain: String) {
         self.scheme = scheme
