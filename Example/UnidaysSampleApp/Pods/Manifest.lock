@@ -1,5 +1,5 @@
 PODS:
-  - UnidaysVerificationSDK (0.2.0)
+  - UnidaysVerificationSDK (0.2.1)
 
 DEPENDENCIES:
   - UnidaysVerificationSDK (from `../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../../
 
 SPEC CHECKSUMS:
-  UnidaysVerificationSDK: 75c2ebf706a1a5761e31d955dfad0456dddb060c
+  UnidaysVerificationSDK: a16a89b0a122893ef4e1a897b1e3b6ac006d5a4b
 
 PODFILE CHECKSUM: 9df3b65ac188d329af1006d1157b3524ca8e3c2c
 

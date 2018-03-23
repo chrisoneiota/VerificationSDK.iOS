@@ -13,7 +13,7 @@ class ConstantsTests: XCTestCase {
     
     func testGivenSDKVersionSet_WhenRequested_ThenReturnsExpectedValue() {
         let version = Constants.sdkVersion
-        XCTAssertEqual("0.2.0", version)
+        XCTAssertEqual("0.2.1", version)
     }
     
     func testGivenAUnidaysError_ThenReturnsNonTrivialDescription() {
