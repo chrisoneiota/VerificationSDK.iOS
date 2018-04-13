@@ -10,19 +10,19 @@ import XCTest
 @testable import UnidaysSDK
 
 class ConstantsTests: XCTestCase {
-    
+
     func testGivenSDKVersionSet_WhenRequested_ThenReturnsExpectedValue() {
         let version = Constants.sdkVersion
-        XCTAssertEqual("0.2.1", version)
+        XCTAssertEqual("0.2.2", version)
     }
-    
+
     func testGivenAUnidaysError_ThenReturnsNonTrivialDescription() {
         let values = [UnidaysError.CFBundleURLSchemesNotSetError,
                         UnidaysError.CouldNotGenerateRequestUrl,
                         UnidaysError.CouldNotParseResponse,
                         UnidaysError.ModeNotSupported,
                         UnidaysError.SetupNotCompletedError]
-        
+
         for error in values {
             let description = error.localizedDescription
             XCTAssert(description.count > 0)
@@ -31,7 +31,7 @@ class ConstantsTests: XCTestCase {
 }
 
 private extension ConstantsTests {
-    
+
     func iterateEnum<T: Hashable>(_: T.Type) -> AnyIterator<T> {
         var i = 0
         return AnyIterator {

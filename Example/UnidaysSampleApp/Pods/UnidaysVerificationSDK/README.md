@@ -4,9 +4,33 @@ This is beta documentation and is subject to change.
 
 The VerificationSDK allows you to retrieve a code directly from UNiDAYS. The SDK will handle retrieving a code using your user's UNiDAYS credentials and then return it to your app.
 
-## Installation
+### Cocoapods
 
-//Todo
+Cocoapods can be used to install the UNiDAYS Verification SDK.
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate the UNiDAYS Verification SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'UnidaysVerificationSDK', '0.2.2'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
 
 ## Usage
 
@@ -20,11 +44,11 @@ There are two example projects included in this repository, for both Swift and O
 
 Info.plist -> URL types -> URL Schemes -> your-custom-scheme
 
-![UNiDAYS Custom Scheme](https://raw.githubusercontent.com/MyUNiDAYS/VerificationSDK.iOS/develop/docs/usage-url-schemes.png) 
+![UNiDAYS Custom Scheme](https://raw.githubusercontent.com/MyUNiDAYS/VerificationSDK.iOS/develop/docs/usage-url-schemes.png)
 
 It's very possible you already have one set but you can add a new one specifically for the SDK.
 
-#### 2. Send your custom scheme to UNiDAYS. 
+#### 2. Send your custom scheme to UNiDAYS.
 
 We use the custom scheme to validate your integration with UNiDAYS.
 
@@ -32,7 +56,7 @@ We use the custom scheme to validate your integration with UNiDAYS.
 
 Info.plist -> LSApplicationQueriesSchemes -> `unidays-sdk`
 
-![UNiDAYS Custom Scheme](https://raw.githubusercontent.com/MyUNiDAYS/VerificationSDK.iOS/develop/docs/usage-query-scheme.png) 
+![UNiDAYS Custom Scheme](https://raw.githubusercontent.com/MyUNiDAYS/VerificationSDK.iOS/develop/docs/usage-query-scheme.png)
 
 #### 4. Setup the Unidays SDK
 
@@ -41,7 +65,7 @@ Within your `didFinishLaunchingWithOptions` method in the applications `AppDeleg
 ```swift
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         //Setup Unidays
         let scheme = "your_custom_scheme"
 
@@ -61,7 +85,7 @@ Within your `didFinishLaunchingWithOptions` method in the applications `AppDeleg
                 break
             }
         }
-        
+
         return true
     }
 ```
@@ -70,13 +94,13 @@ Within your `didFinishLaunchingWithOptions` method in the applications `AppDeleg
 
 Call the Unidays SDK:
 
-Where the variable `response` will contain a number of parameters whose contents are linked to your code type in the UNiDAYS system. 
+Where the variable `response` will contain a number of parameters whose contents are linked to your code type in the UNiDAYS system.
 
 ```swift
     func getCode() {
         // Perks have a channel. Either instore or online if your not sure which you should be using then speak to your unidays representative.
         let channel = UnidaysSDK.Channel.Online
-        
+
         UnidaysSDK.sharedInstance.getCode(channel: channel), success: { (response)
             // Handle the code
             let code = response.code
@@ -112,11 +136,11 @@ You are not required to have fully integrated with UNiDAYS in order for this ste
 
 ```swift
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
+
         //Setup Unidays
         var settings = UnidaysConfig(scheme: scheme, customerSubdomain: subdomain)
         // Make sure you switch this back off in production
-        settings.isDebugEnabled = true 
+        settings.isDebugEnabled = true
 
         // Continue setup as before
     }
@@ -126,7 +150,7 @@ You are not required to have fully integrated with UNiDAYS in order for this ste
 
 When you call the UNiDAYS SDK as described in the usage section, you will see the following screen open in the native UNiDAYS app:
 
-![UNiDAYS Debug list screen](https://raw.githubusercontent.com/MyUNiDAYS/VerificationSDK.iOS/develop/docs/debug-list.png) 
+![UNiDAYS Debug list screen](https://raw.githubusercontent.com/MyUNiDAYS/VerificationSDK.iOS/develop/docs/debug-list.png)
 
 Here you can select from a list of stock responses in order to test your integration quickly. It will also allow to try different code types if you should wish to change them in the future.
 
@@ -134,7 +158,7 @@ Here you can select from a list of stock responses in order to test your integra
 
 You can either submit one of the pre-defined responses or edit one to suit your own needs.
 
-![UNiDAYS Debug list screen](https://raw.githubusercontent.com/MyUNiDAYS/VerificationSDK.iOS/develop/docs/debug-edit-response.png) 
+![UNiDAYS Debug list screen](https://raw.githubusercontent.com/MyUNiDAYS/VerificationSDK.iOS/develop/docs/debug-edit-response.png)
 
 Either way, using the pre-defined responses or editing one and clicking submit will result in the response being sent back to your app.
 
