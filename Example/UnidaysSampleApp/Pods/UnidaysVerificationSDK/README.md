@@ -22,7 +22,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'UnidaysVerificationSDK', '0.2.0'
+    pod 'UnidaysVerificationSDK', '0.2.2'
 end
 ```
 

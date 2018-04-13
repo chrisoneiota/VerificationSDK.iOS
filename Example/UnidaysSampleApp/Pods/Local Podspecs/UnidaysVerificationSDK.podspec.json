@@ -5,7 +5,7 @@
   },
   "summary": "The VerificationSDK allows you to retrieve a code directly from UNiDAYS.",
   "requires_arc": true,
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/MyUNiDAYS/VerificationSDK.iOS.git",
   "source": {
     "git": "https://github.com/MyUNiDAYS/VerificationSDK.iOS.git",
-    "tag": "0.2.1"
+    "tag": "0.2.2"
   },
   "source_files": "UnidaysSDK/**/*",
   "pod_target_xcconfig": {
