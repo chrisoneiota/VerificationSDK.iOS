@@ -56,6 +56,26 @@ extension ProductLauncher: ProductLauncherProtocol {
             if !result || error != nil {
                 productViewController.presentingViewController?.dismiss(animated: true, completion: nil)
                 self.delegate?.onProductFailedToLoad(error: error)
+            } else {
+                self.scheduleInstallCheck(viewController: productViewController)
+            }
+        })
+    }
+}
+
+extension ProductLauncher {
+    func scheduleInstallCheck(viewController: UIViewController) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: { [weak self] in
+            
+            guard let presenting = viewController.presentingViewController else {
+                return
+            }
+            
+            if UnidaysNativeAppLauncher().canOpenUnidays() {
+                presenting.dismiss(animated: true, completion: nil)
+                self?.delegate?.onProductViewDidFinish()
+            } else {
+                self?.scheduleInstallCheck(viewController: viewController)
             }
         })
     }
