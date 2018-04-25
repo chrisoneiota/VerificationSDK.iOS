@@ -49,7 +49,7 @@ private extension SettingsValidator {
                     for item in cfBundleURLTypes {
                         if let bundleType = item as? Dictionary<String, AnyObject> {
                             if let schemes = bundleType["CFBundleURLSchemes"] as? NSArray {
-                                for testScheme in schemes.flatMap({ (anyObject) -> String? in
+                                for testScheme in schemes.compactMap({ (anyObject) -> String? in
                                     return anyObject as? String
                                 }) {
                                     if testScheme == scheme {
