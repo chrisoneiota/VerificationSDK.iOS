@@ -22,12 +22,7 @@
 		4CEFC503203C15F500D9810E /* UnidaysSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFC502203C15F500D9810E /* UnidaysSDKTests.swift */; };
 		4CFA543F20362C3A0007066C /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA543E20362C3A0007066C /* UrlBuilder.swift */; };
 		4CFA54412036339E0007066C /* UnidaysUrlBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA54402036339E0007066C /* UnidaysUrlBuilderTests.swift */; };
-		4CFA54432036370D0007066C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA54422036370D0007066C /* Info.plist */; };
 		D21E85191C45491F00B94EE3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D21E85161C45491F00B94EE3 /* LICENSE */; };
-		D22583E01DA4F76A0089C06E /* UnidaysSDK.swift in Headers */ = {isa = PBXBuildFile; fileRef = D29ADB621C3ED85500F826B7 /* UnidaysSDK.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		D22583E11DA4F7730089C06E /* Constants.swift in Headers */ = {isa = PBXBuildFile; fileRef = D29ADB5F1C3ED85500F826B7 /* Constants.swift */; };
-		D22583E31DA4F7770089C06E /* UnidaysNativeAppLauncher.swift in Headers */ = {isa = PBXBuildFile; fileRef = D29ADB611C3ED85500F826B7 /* UnidaysNativeAppLauncher.swift */; };
-		D22583E41DA4F7790089C06E /* ResponseValidator.swift in Headers */ = {isa = PBXBuildFile; fileRef = D29ADB631C3ED85500F826B7 /* ResponseValidator.swift */; };
 		D29ADB641C3ED85500F826B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29ADB5F1C3ED85500F826B7 /* Constants.swift */; };
 		D29ADB661C3ED85500F826B7 /* UnidaysNativeAppLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29ADB611C3ED85500F826B7 /* UnidaysNativeAppLauncher.swift */; };
 		D29ADB671C3ED85500F826B7 /* UnidaysSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29ADB621C3ED85500F826B7 /* UnidaysSDK.swift */; };
@@ -197,20 +192,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		D29FFC0E1C3EBE35004039EE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D22583E01DA4F76A0089C06E /* UnidaysSDK.swift in Headers */,
-				D22583E41DA4F7790089C06E /* ResponseValidator.swift in Headers */,
-				D22583E11DA4F7730089C06E /* Constants.swift in Headers */,
-				D22583E31DA4F7770089C06E /* UnidaysNativeAppLauncher.swift in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		D29FFC101C3EBE35004039EE /* UnidaysSDK */ = {
 			isa = PBXNativeTarget;
@@ -218,7 +199,6 @@
 			buildPhases = (
 				D29FFC0C1C3EBE35004039EE /* Sources */,
 				D29FFC0D1C3EBE35004039EE /* Frameworks */,
-				D29FFC0E1C3EBE35004039EE /* Headers */,
 				D29FFC0F1C3EBE35004039EE /* Resources */,
 			);
 			buildRules = (
@@ -301,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C6A40AA203EC1F900F000B9 /* Mock-Info.plist in Resources */,
-				4CFA54432036370D0007066C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
